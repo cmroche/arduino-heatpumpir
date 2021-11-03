@@ -333,8 +333,8 @@ void GreeYACHeatpumpIR::send(IRSender& IR, uint8_t currentTemperature)
   IR.space(GREE_YAC_HDR_SPACE);
 
   // send payload
-  IR.sendIRbyte(GreeTemplate[0], GREE_YAC_BIT_MARK, GREE_AIRCON1_ZERO_SPACE, GREE_AIRCON1_ONE_SPACE);
-  IR.sendIRbyte(GreeTemplate[1], GREE_YAC_BIT_MARK, GREE_AIRCON1_ZERO_SPACE, GREE_AIRCON1_ONE_SPACE);
+  IR.sendIRbyte(GreeTemplate[0], GREE_YAC_BIT_MARK, GREE_YAC_ZERO_SPACE, GREE_YAC_ONE_SPACE);
+  IR.sendIRbyte(GreeTemplate[1], GREE_YAC_BIT_MARK, GREE_YAC_ZERO_SPACE, GREE_YAC_ONE_SPACE);
 
   // End mark
   IR.mark(GREE_YAC_BIT_MARK);
